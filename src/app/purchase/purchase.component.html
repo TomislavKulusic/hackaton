@@ -1,0 +1,13 @@
+<md-toolbar>
+  <span>Purchase</span>
+</md-toolbar>
+<div>
+  
+  <h2 *ngIf="check">Thanks for purchasing. Bye</h2>
+  <p>Are you sure that want to buy {{name}} cupon for {{discountCost}} points?</p>
+  <div class="button-row">
+    
+    <button md-raised-button (click)="purchase()">Yes</button>
+    <button md-raised-button (click)="no()">No</button>
+  </div>
+</div>

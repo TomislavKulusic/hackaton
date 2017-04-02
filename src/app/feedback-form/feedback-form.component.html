@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Feedback</h2>
+  <form [formGroup]="myForm" novalidate (ngSubmit)="save(myForm.value)">
+    <md-input-container>
+      <textarea mdInput placeholder="Comment" formControlName="comment"></textarea>
+    </md-input-container>
+    <md-input-container>
+      <input mdInput formControlName="rate" placeholder="Grade 1 - 5">
+    </md-input-container>
+    <button md-raised-button type="submit">Raised button</button>
+  </form>
+
+
+</div>

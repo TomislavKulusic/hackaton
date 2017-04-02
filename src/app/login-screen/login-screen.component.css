@@ -1,0 +1,29 @@
+.container {
+  width: 30%;
+  margin: 10% 0 0 35%;
+  height: auto;
+}
+
+
+md-input-container {
+  width: 100%;
+  margin: 5% 0 0;
+}
+
+.example-button-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2% 0 0;
+  
+}
+
+.example-button-row button {
+    width: 100%;
+    height: 50px;
+}
+
+md-toolbar {
+  background-color: #16a085;
+  color: white;
+}

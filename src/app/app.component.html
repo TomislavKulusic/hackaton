@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container>
+  <md-sidenav #start (open)="closeStartButton.focus()">
+    <md-list>
+      <div id="title">
+        <img src="../assets/logo.png">
+      </div>
+      <md-list-item *ngIf = "check"><i class="fa fa-user" aria-hidden="true"></i>
+        <a routerLink="/admin"> Admin </a></md-list-item>
+      <md-list-item><i class="fa fa-user" aria-hidden="true"></i>
+        <a [routerLink]="['/info', id]"> User Profile </a></md-list-item>
+      <md-list-item><i class="fa fa-table" aria-hidden="true"></i>
+        <a [routerLink]="['/user', id]"> Display </a></md-list-item>
+      <md-list-item><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <a routerLink="/spend"> Spend Points </a></md-list-item>
+      <md-list-item><i class="fa fa-sign-out" aria-hidden="true"></i>
+        <a (click)="logout()"> Logout </a></md-list-item>
+    </md-list>
+    <br>
+    <button md-button #closeStartButton (click)="start.close()">Close</button>
+  </md-sidenav>
+  <md-toolbar>
+    <i class="fa fa-bars" aria-hidden="true" (click)="start.open()"></i>
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+    <span>Citizen Card</span>
+  </md-toolbar>
+  <router-outlet></router-outlet>
+</md-sidenav-container>

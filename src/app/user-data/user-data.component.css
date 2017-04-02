@@ -1,0 +1,34 @@
+table {
+  width: 40%;
+  margin: 2% 10% 2% 30%;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
+  border-collapse: collapse;
+}
+
+#header {
+  background-color: #16a085;
+  border: none;
+  color: white;
+}
+
+th {
+  text-align: left;
+  padding: 1.6rem;
+  font-weight: 400;
+  vertical-align: bottom;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+td {
+  text-align: left;
+  padding: 1.6rem;
+  font-weight: 400;
+  vertical-align: bottom;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+td button {
+    background-color: #16a085;
+    color: white;
+}

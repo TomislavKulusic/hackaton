@@ -1,0 +1,12 @@
+<div class="container">
+  <div id="imageContainer"></div>
+  <div id="info">
+    <p id="name">{{user.fname}} {{user.lname}}</p>
+    <p><i class="fa fa-user" aria-hidden="true"></i> {{user.username}}
+    </p>
+    <p><i class="fa fa-mobile" aria-hidden="true"></i> {{user.number}}</p>
+    <p><i class="fa fa-address-book" aria-hidden="true"></i> {{user.address}}
+    </p>
+  </div>
+  <div id = "secondInfo"><button md-raised-button (click)="downloadData()">Download Data</button></div>
+</div>

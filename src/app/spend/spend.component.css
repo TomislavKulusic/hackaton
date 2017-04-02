@@ -1,0 +1,18 @@
+.card {
+  width: 20%;
+  float: left;
+  margin: 1%;
+  
+}
+
+.example-header-image {
+  background-size: cover;
+}
+
+div {
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+}

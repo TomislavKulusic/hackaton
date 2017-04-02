@@ -1,0 +1,16 @@
+<div>
+  <md-card class="card" *ngFor="let i of items; let counter = index">
+    <img md-card-image src="assets/shop.jpg">
+    <md-card-content>
+      <h2>{{i.name}}</h2>
+      <p>
+        Kupon za {{i.discountDescription}} u vrijednosti od {{i.discountAmount}}%
+        <br /><b>Price:</b> {{i.discountCost}}
+      </p>
+    </md-card-content>
+    <md-card-actions>
+      <button md-raised-button (click)="Purchase(counter)">Purchase</button>
+    </md-card-actions>
+
+  </md-card>
+</div>

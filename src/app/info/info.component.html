@@ -1,0 +1,41 @@
+<div class="container">
+  <div id="imageContainer"></div>
+  <div id="info">
+    <p id="name">{{user.fname}} {{user.lname}}</p>
+    <p><i class="fa fa-user" aria-hidden="true"></i> {{user.username}}
+    </p>
+    <p><i class="fa fa-mobile" aria-hidden="true"></i> {{user.number}}</p>
+    <p><i class="fa fa-address-book" aria-hidden="true"></i> {{user.address}}
+    </p>
+  </div>
+  <div id="secondInfo">
+    <p>Points: {{user.points}}</p>
+    <button md-raised-button (click) = "sendShoping()">Spend Points</button>
+  </div>
+</div>
+<div class="containerLeft">
+  <md-toolbar>
+    <span>Available Cupons</span>
+  </md-toolbar>
+  <md-list>
+    <md-list-item *ngFor="let d of discounts">Cupon for {{d.for}} Discount: {{d.discount}}% Code: {{d.code}}</md-list-item>
+  </md-list>
+</div>
+<div class="containerRight">
+  <md-toolbar>
+    <span>Activity</span>
+  </md-toolbar>
+  <md-list>
+    <md-list-item *ngFor="let f of feedbacks">{{f.name}} feedback activity. Rated with {{f.stars}}</md-list-item>
+  </md-list>
+</div>
+<div class="container">
+  <md-toolbar>
+    <span>Most Used</span>
+  </md-toolbar>
+  <canvas *ngIf="!loading" baseChart
+              [data]="doughnutChartData"
+              [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType">
+              </canvas>
+</div>

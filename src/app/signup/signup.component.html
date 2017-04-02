@@ -1,0 +1,29 @@
+<md-toolbar>Login</md-toolbar>
+    <form [formGroup]="myForm" novalidate (ngSubmit)="onSubmit(myForm.value)">
+
+
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Username" formControlName="username">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Password" formControlName="password">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="fname" formControlName="fname">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="lname" formControlName="lname">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="number" formControlName="number">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="address" formControlName="address">
+    </md-input-container>
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="dob" formControlName="dob">
+    </md-input-container>
+    <div class="example-button-row">
+      <button md-raised-button>Sign up</button>
+    </div>
+    </form>

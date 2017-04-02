@@ -1,0 +1,16 @@
+<table>
+  <tr id = "header">
+    <th>Name</th>
+    <th>Type</th>
+    <th>Date</th>
+    <th>Action</th>
+  </tr>
+
+  <tr *ngFor="let l of locations; let i = index">
+    <td>{{l.name}}</td>
+    <td>{{l.type}}</td>
+    <td>{{l.date}}</td>
+   
+    <td><button md-raised-button (click) = "Feedback(i)"  >Feedback</button></td>
+  </tr>
+</table>

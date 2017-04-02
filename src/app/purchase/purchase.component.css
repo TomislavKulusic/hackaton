@@ -1,0 +1,23 @@
+md-toolbar {
+  background-color: #16a085;
+  color: white;
+}
+
+div {
+  width: 100%;
+  height: auto;
+}
+
+div p {
+  font-size: 20px;
+  margin: 15% 2% 20% 10%;
+}
+
+.button-row {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+    padding-top: 20px;
+}
